@@ -107,5 +107,19 @@ console.log(wrapper("kaas", "Q"));
 // createDetailString({ firstName: 'Jan', lastName: 'Jansen', profession: 'docent'}) geeft "Het beroep vam Jan Jansen is docent."
 // createDetailString({ firstName: 'Kees', lastName: 'Klaasen', profession: 'brandweerman'}) geeft "Het beroep vam Kees Klaasen is brandweerman."
 
+const detailObject = [{firstName:"Jan",lastName:"Jansen",profession:"docent"}, {firstName:"Kees",lastName:"Klaasen",profession:"brandweerman"}];
+function createDetailString() {
+  for (let i = 0; i < detailObject.length; i++) {
+    const firstName = (detailObject[i].firstName);
+    const lastName = (detailObject[i].lastName);
+    const profession = (detailObject[i].profession);
+    console.log(`Het beroep van ${firstName} ${lastName} is ${profession}.`)
+  }
+}
+
+createDetailString();
+
+
+
 
 
