@@ -29,12 +29,13 @@ for (let i = 0; i < meetingTimes.length; i++) {
 // console.log(salaries) geeft [3360, 2467.5, 2940, 3675, 2940]
 // ==========================================
 
-const salaries = [3200, 2350, 2800, 3500, 2800];
+let salaries = [3200, 2350, 2800, 3500, 2800];
 
 for (let i = 0; i < salaries.length; i++) {
-    console.log(salaries[i] * 1.05);
+    salaries[i] = salaries[i] * 1.05;
 }
 
+console.log(salaries);
 
 // ==========================================
 // Opdracht 3. Eén van Bob's taken is medewerkers feliciteren met hun "zoveelste" verjaardag.
@@ -48,8 +49,10 @@ for (let i = 0; i < salaries.length; i++) {
 const birthYears = [1995, 1997, 1990, 2003, 1982];
 
 for (let i = 0; i < birthYears.length; i++) {
-    console.log(2025 - birthYears[i]);
+    birthYears[i] = 2025 - birthYears[i];
 }
+
+console.log(birthYears);
 
 // ==========================================
 // Opdracht 4. Bob houdt bij hoeveel verlofuren medewerkers per maand opnemen. Nu wil hij voor het nieuwe jaar een bonusstructuur toepassen:
@@ -64,13 +67,14 @@ for (let i = 0; i < birthYears.length; i++) {
 const leaveHours = [6, 9, 2, 7, 3];
 for (let i = 0; i < leaveHours.length; i++) {
     if (leaveHours[i] % 2 === 0){
-        console.log(leaveHours[i] * 2)
+        leaveHours[i] = leaveHours[i] * 2;
     }
     else {
-        console.log(leaveHours[i] * 0.5);
+        leaveHours[i] = leaveHours[i] * 0.5;
     }
 }
 
+console.log(leaveHours);
 
 // ==========================================
 // Opdracht 5 (BONUS). Na een dag bij Loop-it Solutions zit je er lekker in, tot je beseft dat één van de machines de
@@ -89,5 +93,7 @@ for (let i = 0; i < leaveHours.length; i++) {
 const productionCodes = [" abC123  ", "  DEF456", "ghi789  ", "JKL012"];
 
 for (let i = 0; i < productionCodes.length; i++) {
-    console.log(productionCodes[i].trim().toUpperCase());
+    productionCodes[i] = productionCodes[i].trim().toUpperCase();
 }
+
+console.log(productionCodes);
